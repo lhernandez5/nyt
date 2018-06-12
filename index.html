@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 main ">
+                <div class="jumbotron">
+                    <h1 class="display-4">New York Times</h1>
+                    <p class="lead"></p>
+                    <hr class="my-4">
+                    <p></p>
+                    <p class="lead">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 main">
+                <!-- user input begins here -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Search Term</label>
+                        <input type="text" class="form-control" id="search-term" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
+                        <select class="form-control" id="number-of-records">
+                            <option>1</option>
+                            <option>5</option>
+                            <option>10</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Start Year</label>
+                        <input type="number" class="form-control" id="start-year" placeholder="">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">End Year</label>
+                            <input type="number" class="form-control" id="end-year" placeholder="">
+                        </div>
+                        <button type="submit" id="search" class="btn btn-primary">Search</button>
+                        <button type="submit" id="clear" class="btn btn-primary">Clear</button>
+                </form>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 main" >
+                    <br>
+                    <h3>Articles</h3>
+                    <p id="articles"></p>
+
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>
